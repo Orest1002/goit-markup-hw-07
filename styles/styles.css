@@ -1065,14 +1065,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             line-height: 0;
         
         }
-        .mobile-menu-container{
+         .mobile-menu-container{
             display: flex;
-            flex-direction: column;     
-            position: relative;
-            padding-left: 15px;
-            padding-top: 80px;
-            padding-bottom: 40px;
+       flex-direction: column;
+      height: 100%;
+              
         
+        } 
+        .mob-soc-contact{
+            margin-top: auto;
         }
         .mobile-menu.is-open{
             opacity: 1;
@@ -1080,9 +1081,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             pointer-events: auto;
             
         }
-.mob-menu{
-    margin-bottom:auto;
-}
+
        
         .mob-menu-item{
                         font-family: 'Roboto';
@@ -1123,11 +1122,17 @@ color: #434455;
             color: var(--primary-brend-color)
 }
            .contact-mail{
+            font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
 color: #434455;
            } 
            .contact-mail:hover,
            .contact-mail:focus{ 
     color: var(--primary-brend-color);}
+
 
 
         
@@ -1155,9 +1160,8 @@ color: #434455;
         }
              .social-list-icon{
                 fill: #FFFFFF;
-                
-        
              } 
+             
 
     .page-header-container{
         display:flex;
@@ -2307,8 +2311,13 @@ text-transform: uppercase;
         }
       } 
       @media screen and (min-width:1200px){
+        .service {
+            display: flex;
+            flex-wrap: nowrap;
+        }
         .cerv-list{
             display: flex;
+           
         }
         .servis-list::before {
             display: block;
