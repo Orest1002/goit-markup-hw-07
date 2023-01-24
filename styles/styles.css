@@ -808,7 +808,7 @@ right: 24px;
    
    transition:visibility 800ms ease,
    opacity 800ms ease;
-   overflow-y: scroll;
+   
   
 }
 @media screen and (min-width:320px){
@@ -817,10 +817,9 @@ right: 24px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 24px;
+        padding: 20px;
         max-width:calc(100% - 60px);
-        min-height: 576px;
-        border-radius: 4px;
+         border-radius: 4px;
         background-color: #f4f4fd;
        
      
@@ -832,9 +831,8 @@ right: 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px;
+    padding: 24px;
     width:392px;
-    
     border-radius: 4px;
     background-color: #f4f4fd;
     height: 600px; 
@@ -871,14 +869,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primari-text-color);
-  margin-top: px;
+  padding-top: 40px;
 
 }
 
 .modal-form{
     display: flex;
     flex-direction: column;
-    padding-top: 72px;
+   
     
 }
 .modal-form-input{
@@ -1061,19 +1059,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         background-color: #FFFFFF;
     }  
 
-     /* .modal{
-       
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 24px;
-        max-width: 100%;
-        margin: 0 auto;
-        min-height:576px ;
-        border-radius: 4px;
-        background-color: #f4f4fd;
-       
-    }  */
+   
         .mobile-menu-open{
             background-color: transparent;
             border-radius: none;
@@ -1379,7 +1365,21 @@ padding-bottom: 88px;}
              
                 @media screen and (max-width:767px){
                     
-                    
+                    .modal{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 24px;
+                        width:392px;
+                        
+                        border-radius: 4px;
+                        background-color: #f4f4fd;
+                        height: 600px; 
+                        max-height: 90vh; 
+                        overflow-y: scroll;
+                     
+                    }
                     .about-title{
                         font-weight: 500;
                         font-size: 20px;
@@ -1888,7 +1888,7 @@ padding-bottom: 88px;}
            color: #FFFFFF;
            width: 492px;
            text-align: center;
-           padding-bottom: 88px;
+           margin-bottom: 88px;
            margin: auto;
           
            
@@ -2236,7 +2236,10 @@ color: #2E2F42;
             
               
                 
-               
+               .page-hero{
+                padding-top: 0;
+                padding-bottom: 0;
+               }
                    
             
                
@@ -2512,7 +2515,9 @@ text-transform: uppercase;
             
            
             } 
-           
+           .main-title{
+            margin-bottom: 88px;
+           }
           .text-footer{
             width: 1200px;
           }
