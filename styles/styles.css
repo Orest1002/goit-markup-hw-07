@@ -808,8 +808,8 @@ right: 24px;
    
    transition:visibility 800ms ease,
    opacity 800ms ease;
-   
-   overflow: auto;
+   overflow-y: scroll;
+  
 }
 @media screen and (min-width:320px){
     .modal{
@@ -819,7 +819,7 @@ right: 24px;
         transform: translate(-50%, -50%);
         padding: 24px;
         max-width:calc(100% - 60px);
-        min-height:576px ;
+        min-height: 576px;
         border-radius: 4px;
         background-color: #f4f4fd;
        
@@ -832,12 +832,14 @@ right: 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
-    width:408px;
-    min-height:576px ;
+    padding: 50px;
+    width:392px;
+    
     border-radius: 4px;
     background-color: #f4f4fd;
-   
+    height: 600px; 
+    max-height: 90vh; 
+    overflow-y: scroll;
  
 } 
 .backdrop.is-hidden{
@@ -1531,8 +1533,7 @@ padding-bottom: 88px;}
                                 
                             font-size: 16px;
                             line-height: 1.5;
-                           padding-left: 40px;
-                           padding-right: 40px;
+                           
                             
                             margin-bottom: 72px;
                             color: var(--accent-text-color);}
@@ -1730,8 +1731,8 @@ padding-bottom: 88px;}
             display: none;}
         .container{
             max-width: 768px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
             margin: 0 auto;
             
            
@@ -2505,14 +2506,17 @@ text-transform: uppercase;
     @media screen and (min-width:1200px){
        
                .container{
-            max-width: 1200px;
+            max-width: 1158px;
             margin-left: auto;
             margin-right: auto;
             
            
             } 
            
-          
+          .text-footer{
+            width: 1200px;
+          }
+            
            
             .page-header-container{
                               padding-left: 15px;
